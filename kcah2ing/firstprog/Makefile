@@ -19,9 +19,9 @@ dump-intel: build
 clean:
 	-$(RM) $(EXE) $(OBJS) *.o *.exe *.asm
 
-run:
+run: build
 	./$(EXE)
 
-profile:
+profile: build
 	../valgrind.sh ./$(EXE)
 
