@@ -5,14 +5,23 @@ EXE=$(shell basename `pwd`)-exe
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
 
-all: $(EXE)
+build: $(EXE)
 
 $(EXE): $(OBJS)
 	$(CC) -o $@ $(CFLAGS) $(OBJS) $(LIBS)
 
+dump-att: build
+	objdump -x86-asm-syntax=att -D $(EXE) > $(EXE).att.asm
+
+dump-intel: build
+	objdump -x86-asm-syntax=intel -D $(EXE) > $(EXE).intel.asm
+
 clean:
-	-$(RM) $(EXE) $(OBJS) *.o *.exe
+	-$(RM) $(EXE) $(OBJS) *.o *.exe *.asm
+
 run:
 	./$(EXE)
+
 profile:
 	../valgrind.sh ./$(EXE)
+
