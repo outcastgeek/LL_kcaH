@@ -11,10 +11,12 @@ $(EXE): $(OBJS)
 	$(CC) -o $@ $(CFLAGS) $(OBJS) $(LIBS)
 
 dump-att: build
-	objdump -x86-asm-syntax=att -D $(EXE) > $(EXE).att.asm
+	objdump -M att -D $(EXE) > $(EXE).att.asm
+	#objdump -x86-asm-syntax=att -D $(EXE) > $(EXE).att.asm
 
 dump-intel: build
-	objdump -x86-asm-syntax=intel -D $(EXE) > $(EXE).intel.asm
+	objdump -M intel -D $(EXE) > $(EXE).intel.asm
+	#objdump -x86-asm-syntax=intel -D $(EXE) > $(EXE).intel.asm
 
 clean:
 	-$(RM) $(EXE) $(OBJS) *.o *.exe *.asm
