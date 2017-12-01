@@ -8,7 +8,7 @@ OBJS=$(SRCS:.c=.o)
 build: $(EXE)
 
 $(EXE): $(OBJS)
-	$(CC) -o $@ $(CFLAGS) $(OBJS) $(LIBS)
+	$(CC) -g -o $@ $(CFLAGS) $(OBJS) $(LIBS)
 
 dump-att: build
 	objdump -M att -D $(EXE) > $(EXE).att.asm
