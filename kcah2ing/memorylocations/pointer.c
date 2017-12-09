@@ -9,10 +9,13 @@ int main() {
 
     strcpy(str_a, "Hello, world!\n");
     pointer = str_a; // Set the pointer to the start of the array.
-    printf(pointer);
+//    printf(pointer);
+    printf("Pointer: %s", pointer);
 
     pointer2 = pointer + 2; // Set the second one 2 bytes further in.
-    printf(pointer2);       // Print it.
+//    printf(pointer2);       // Print it.
+    printf("Pointer2: %s", pointer2);       // Print it.
     strcpy(pointer2, "y you guys!\n"); // Copy into that spot.
-    printf(pointer);        // Print again.
+//    printf(pointer);        // Print again.
+    printf("Pointer: %s", pointer);        // Print again.
 }

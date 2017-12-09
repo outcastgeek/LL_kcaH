@@ -6,5 +6,6 @@ int main() {
     char str_a[20];
 
     strcpy(str_a, "Hello, world!\n");
-    printf(str_a);
+//    printf(str_a);
+    printf("str_a: %s", str_a);
 }

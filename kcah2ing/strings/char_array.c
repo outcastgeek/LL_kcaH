@@ -18,5 +18,6 @@ int main() {
     str_a[12] = '!';
     str_a[13] = '\n';
     str_a[14] = 0;
-    printf(str_a);
+//    printf(str_a);
+    printf("str_a: %s", str_a);
 }
