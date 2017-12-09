@@ -9,10 +9,19 @@ set(FIRSTPROG_SRC ${CMAKE_CURRENT_SOURCE_DIR}/firstprog)
 add_executable(firstprog-exe ${FIRSTPROG_SRC}/firstprog.c)
 
 set(STRINGS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/strings)
-add_executable(char_array-exe ${STRINGS_SRC}/char_array.c)
+add_executable(char_array-exe ${STRINGS_SRC}/char_array.c memorylocations/pointer.c)
 
 set(STRINGS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/strings)
 add_executable(char_array2-exe ${STRINGS_SRC}/char_array2.c)
 
 set(SIGNEDUNSIGNEDLONGSHORT_SRC ${CMAKE_CURRENT_SOURCE_DIR}/signedunsignedlongshort)
 add_executable(datatype_sizes-exe ${SIGNEDUNSIGNEDLONGSHORT_SRC}/datatype_sizes.c)
+
+set(MEMORYLOCATIONS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/memorylocations)
+add_executable(pointer-exe ${MEMORYLOCATIONS_SRC}/pointer.c)
+
+set(MEMORYLOCATIONS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/memorylocations)
+add_executable(addressof-exe ${MEMORYLOCATIONS_SRC}/addressof.c)
+
+set(MEMORYLOCATIONS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/memorylocations)
+add_executable(addressof2-exe ${MEMORYLOCATIONS_SRC}/addressof2.c)
