@@ -9,7 +9,7 @@ set(FIRSTPROG_SRC ${CMAKE_CURRENT_SOURCE_DIR}/firstprog)
 add_executable(firstprog-exe ${FIRSTPROG_SRC}/firstprog.c)
 
 set(STRINGS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/strings)
-add_executable(char_array-exe ${STRINGS_SRC}/char_array.c memorylocations/pointer.c)
+add_executable(char_array-exe ${STRINGS_SRC}/char_array.c)
 
 set(STRINGS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/strings)
 add_executable(char_array2-exe ${STRINGS_SRC}/char_array2.c)

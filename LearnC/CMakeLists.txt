@@ -29,8 +29,8 @@ add_executable(ex7-exe ${EX7_SRC}/ex7.c)
 set(EX8_SRC ${CMAKE_CURRENT_SOURCE_DIR}/ex8)
 add_executable(ex8-exe ${EX8_SRC}/ex8.c)
 
-set(EX9_SRC ${CMAKE_CURRENT_SOURCE_DIR}/ex9)
-add_executable(ex9-exe ${EX9_SRC}/ex9.c)
+#set(EX9_SRC ${CMAKE_CURRENT_SOURCE_DIR}/ex9)
+#add_executable(ex9-exe ${EX9_SRC}/ex9.c)
 
 set(EX10_SRC ${CMAKE_CURRENT_SOURCE_DIR}/ex10)
 add_executable(ex10-exe ${EX10_SRC}/ex10.c)
@@ -59,8 +59,8 @@ add_executable(ex17-exe ${EX17_SRC}/ex17.c)
 set(EX18_SRC ${CMAKE_CURRENT_SOURCE_DIR}/ex18)
 add_executable(ex18-exe ${EX18_SRC}/ex18.c)
 
-set(EX19_SRC ${CMAKE_CURRENT_SOURCE_DIR}/ex19)
-add_executable(ex19-exe ${EX19_SRC}/ex19.c)
+#set(EX19_SRC ${CMAKE_CURRENT_SOURCE_DIR}/ex19)
+#add_executable(ex19-exe ${EX19_SRC}/ex19.c)
 
 #set(EX20_SRC ${CMAKE_CURRENT_SOURCE_DIR}/ex20)
 #add_executable(ex20-exe ${EX20_SRC}/ex20.c)
