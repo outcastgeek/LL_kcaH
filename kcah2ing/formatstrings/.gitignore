@@ -1,0 +1,6 @@
+
+*.o
+*-exe
+*.asm
+fmt_strings
+input
