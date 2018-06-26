@@ -25,6 +25,6 @@ add_executable(fmt_strings-exe ${FORMATSTRINGS_SRC}/fmt_strings.c)
 add_executable(input-exe ${FORMATSTRINGS_SRC}/input.c)
 
 set(TYPECASTING_SRC ${CMAKE_CURRENT_SOURCE_DIR}/typecasting)
-add_executable(input-exe ${TYPECASTING_SRC}/typecasting.c)
-add_executable(input-exe ${TYPECASTING_SRC}/pointer_types.c)
+add_executable(typecasting-exe ${TYPECASTING_SRC}/typecasting.c)
+add_executable(pointer_types-exe ${TYPECASTING_SRC}/pointer_types.c)
 
