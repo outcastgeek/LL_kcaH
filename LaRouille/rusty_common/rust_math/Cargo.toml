@@ -1,0 +1,10 @@
+[package]
+name = "rust_math"
+version = "0.1.0"
+authors = ["outcastgeek <outcastgeek+git@gmail,com>"]
+
+[lib]
+name = "rust_math"
+crate-type = ["staticlib"]
+
+[dependencies]

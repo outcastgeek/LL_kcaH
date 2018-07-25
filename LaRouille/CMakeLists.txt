@@ -32,6 +32,6 @@ add_dependencies(rusty_adder-exe rusty_common)
 ### Specify RustyCommon's link libraries
 target_link_libraries(
         rusty_adder-exe
-        debug "${CMAKE_CURRENT_SOURCE_DIR}/rusty_common/target/debug/librusty_common.a"
-        optimized "${CMAKE_CURRENT_SOURCE_DIR}/rusty_common/target/release/librusty_common.a"
+        debug "${CMAKE_CURRENT_SOURCE_DIR}/rusty_common/target/debug/librust_math.a"
+        optimized "${CMAKE_CURRENT_SOURCE_DIR}/rusty_common/target/release/librust_math.a"
 )

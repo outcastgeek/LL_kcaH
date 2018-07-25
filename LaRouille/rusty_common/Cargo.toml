@@ -1,10 +1,5 @@
-[package]
-name = "rusty_common"
-version = "0.1.0"
-authors = ["outcastgeek <outcastgeek+git@gmail,com>"]
+[workspace]
 
-[lib]
-name = "rusty_common"
-crate-type = ["staticlib"]
-
-[dependencies]
+members = [
+    "rust_math",
+]
