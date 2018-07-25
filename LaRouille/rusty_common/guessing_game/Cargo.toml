@@ -1,0 +1,10 @@
+[package]
+name = "guessing_game"
+version = "0.1.0"
+authors = ["outcastgeek <outcastgeek+git@gmail,com>"]
+
+[lib]
+name = "guessing_game"
+crate-type = ["staticlib"]
+
+[dependencies]
