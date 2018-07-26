@@ -8,3 +8,4 @@ name = "rust_math"
 crate-type = ["staticlib"]
 
 [dependencies]
+libm = "0.1.2"
