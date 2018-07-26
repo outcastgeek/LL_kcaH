@@ -8,4 +8,4 @@ name = "guessing_game"
 crate-type = ["staticlib"]
 
 [dependencies]
-rand = "0.5.4"
+rand = "0.4.0"
