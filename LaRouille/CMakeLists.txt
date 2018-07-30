@@ -1,8 +1,11 @@
 project(LaRouille)
 
-cmake_minimum_required(VERSION 3.3)
+cmake_minimum_required(VERSION 3.8)
+#cmake_minimum_required(VERSION 3.3)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -std=c11")
+
+set(CMAKE_VERBOSE_MAKEFILE TRUE)
 
 set(RUSTYADDER_SRC ${CMAKE_CURRENT_SOURCE_DIR}/rusty_adder)
 add_executable(rusty_adder-exe ${RUSTYADDER_SRC}/rusty_adder.c)
