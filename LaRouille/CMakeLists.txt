@@ -25,7 +25,7 @@ ExternalProject_Add(
         DOWNLOAD_COMMAND ""
         CONFIGURE_COMMAND ""
         BUILD_COMMAND cargo build
-            COMMAND cargo build --release
+        COMMAND cargo build --release
         TEST_COMMAND cargo test
         BINARY_DIR "${CMAKE_CURRENT_SOURCE_DIR}/rusty_common"
         INSTALL_COMMAND ""
