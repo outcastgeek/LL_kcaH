@@ -8,3 +8,5 @@ add_subdirectory(kcah2ing)
 add_subdirectory(LearnC)
 
 add_subdirectory(LaRouille)
+
+add_subdirectory(TourCpp2)
