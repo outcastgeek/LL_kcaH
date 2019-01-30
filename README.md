@@ -4,7 +4,7 @@ You can open the project in Gitpod, a free online dev evironment for GitHub:
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/outcastgeek/LL_kcaH)
 
-**Miscellaneous: **
+**Miscellaneous:**
 
 * [C/C++ Layer](https://github.com/syl20bnr/spacemacs/tree/master/layers/%2Blang/c-c%2B%2B)
 * [.clangformat](http://clang.llvm.org/docs/ClangFormat.html)
