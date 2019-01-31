@@ -16,3 +16,6 @@ add_executable(hr_input_output-exe ${HR_INOUT_SRC}/hr_input_output.cpp)
 
 set(HR_BASICDATATYPES_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_BasicDataTypes)
 add_executable(hr_basic_data_types-exe ${HR_BASICDATATYPES_SRC}/hr_basic_data_types.cpp)
+
+set(HR_INHERITEDCODE_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_InheritedCode)
+add_executable(hr_inherited_code-exe ${HR_INHERITEDCODE_SRC}/hr_inherited_code.cpp)
