@@ -19,3 +19,6 @@ add_executable(hr_basic_data_types-exe ${HR_BASICDATATYPES_SRC}/hr_basic_data_ty
 
 set(HR_INHERITEDCODE_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_InheritedCode)
 add_executable(hr_inherited_code-exe ${HR_INHERITEDCODE_SRC}/hr_inherited_code.cpp)
+
+set(HR_EXCEPTIONALSERVER_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_ExceptionalServer)
+add_executable(hr_exceptional_server-exe ${HR_EXCEPTIONALSERVER_SRC}/hr_exceptional_server.cpp)
