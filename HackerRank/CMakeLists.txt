@@ -13,3 +13,6 @@ add_executable(hr_hello_world-exe ${HR_HELLO_SRC}/hr_hello_world.cpp)
 
 set(HR_INOUT_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_InputOutput)
 add_executable(hr_input_output-exe ${HR_INOUT_SRC}/hr_input_output.cpp)
+
+set(HR_BASICDATATYPES_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_BasicDataTypes)
+add_executable(hr_basic_data_types-exe ${HR_BASICDATATYPES_SRC}/hr_basic_data_types.cpp)
