@@ -14,6 +14,8 @@ double comp4(std::vector<double>& v)
     auto sz = v.size();
 
     auto accum = [](double *start, double *end) {
+        if (start==nullptr || end== nullptr)
+            return 0.0;
 //        return std::accumulate(start, end, 0.0);
         return std::accumulate(start, end, 0.0, std::plus<>{});
     };
