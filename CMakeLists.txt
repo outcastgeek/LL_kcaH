@@ -12,3 +12,5 @@ add_subdirectory(LaRouille)
 add_subdirectory(TourCpp2)
 
 add_subdirectory(HackerRank)
+
+add_subdirectory(Tinkering)

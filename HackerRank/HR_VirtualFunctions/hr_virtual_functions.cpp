@@ -6,20 +6,37 @@
 using namespace std;
 
 class Person {
+private:
     string name;
     int age;
 public:
-    ~Person() {}
+    Person(string i_name, int i_age): name{i_name}, age{i_age} {}
+    Person(): name{""}, age{0} {}
+    void getdata() {
+        std::cout << "Name: " << name << " Age: " << age << std::endl;
+    }
+    void putdata() {
+        std::cout << "Name: " << name << " Age: " << age << std::endl;
+    }
+    virtual ~Person() {} // destructor
 };
 
-class Professor: Person {
+class Professor: public Person {
+private:
+    int cur_id, publications;
 public:
-    Professor(string i_name, int i_age): name{i_name}, age{i_age} {}
-    Professor(): name{""}, age{0} {}
+    Professor(string i_name, int i_age): Person{i_name, i_age} {}
+    Professor(): Person() {}
+    ~Professor() {}
 };
 
-class Student: Person{
-
+class Student: public Person{
+private:
+    int cur_id, marks;
+public:
+    Student(string i_name, int i_age): Person{i_name, i_age} {}
+    Student(): Person() {}
+    ~Student() {}
 };
 
 int main(){

@@ -23,5 +23,5 @@ add_executable(hr_inherited_code-exe ${HR_INHERITEDCODE_SRC}/hr_inherited_code.c
 set(HR_EXCEPTIONALSERVER_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_ExceptionalServer)
 add_executable(hr_exceptional_server-exe ${HR_EXCEPTIONALSERVER_SRC}/hr_exceptional_server.cpp)
 
-#set(HR_VIRTUALFUNCTIONS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_VirtualFunctions)
-#add_executable(hr_virtual_functions-exe ${HR_VIRTUALFUNCTIONS_SRC}/hr_virtual_functions.cpp)
+set(HR_VIRTUALFUNCTIONS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_VirtualFunctions)
+add_executable(hr_virtual_functions-exe ${HR_VIRTUALFUNCTIONS_SRC}/hr_virtual_functions.cpp)
