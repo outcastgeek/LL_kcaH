@@ -6,36 +6,51 @@
 using namespace std;
 
 class Person {
-private:
+protected:
     string name;
     int age;
 public:
-    Person(string i_name, int i_age): name{i_name}, age{i_age} {}
+    Person(string i_name, int i_age): name{std::move(i_name)}, age{i_age} {}
     Person(): name{""}, age{0} {}
-    void getdata() {
-        std::cout << "Name: " << name << " Age: " << age << std::endl;
-    }
-    void putdata() {
-        std::cout << "Name: " << name << " Age: " << age << std::endl;
-    }
-    virtual ~Person() {} // destructor
+    virtual void getdata() = 0;
+    virtual void putdata() = 0;
+    virtual ~Person() = default; // destructor
 };
 
 class Professor: public Person {
 private:
-    int cur_id, publications;
+    const int cur_id = 1;
+    int publications;
 public:
-    Professor(string i_name, int i_age): Person{i_name, i_age} {}
+    Professor(string i_name, int i_age): Person{std::move(i_name), i_age} {}
     Professor(): Person() {}
+
+    void getdata() override {
+        cin >> name >> age >> publications;
+    }
+
+    void putdata() override {
+        cout << name << " " << age << " " << publications << " " << cur_id << endl;
+    }
+
     ~Professor() {}
 };
 
 class Student: public Person{
 private:
-    int cur_id, marks;
+    int cur_id, marks[6];
 public:
     Student(string i_name, int i_age): Person{i_name, i_age} {}
     Student(): Person() {}
+
+    void getdata() override {
+        cin >> name >> age;
+    }
+
+    void putdata() override {
+
+    }
+
     ~Student() {}
 };
 
