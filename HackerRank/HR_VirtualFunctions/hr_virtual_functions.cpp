@@ -3,6 +3,9 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+#include <numeric>
+#include <array>
+
 using namespace std;
 
 class Person {
@@ -19,11 +22,16 @@ public:
 
 class Professor: public Person {
 private:
-    const int cur_id = 1;
+    int cur_id;
     int publications;
 public:
-    Professor(string i_name, int i_age): Person{std::move(i_name), i_age} {}
-    Professor(): Person() {}
+    static int id;
+    Professor(string i_name, int i_age): Person{std::move(i_name), i_age} {
+        cur_id = ++id;
+    }
+    Professor(): Person() {
+        cur_id = ++id;
+    }
 
     void getdata() override {
         cin >> name >> age >> publications;
@@ -35,24 +43,32 @@ public:
 
     ~Professor() {}
 };
+int Professor::id = 0;
 
 class Student: public Person{
 private:
-    int cur_id, marks[6];
+    int cur_id;
+    array<int, 6> marks;
 public:
-    Student(string i_name, int i_age): Person{i_name, i_age} {}
-    Student(): Person() {}
+    static int id;
+    Student(string i_name, int i_age): Person{i_name, i_age} {
+        cur_id = ++id;
+    }
+    Student(): Person() {
+        cur_id = ++id;
+    }
 
     void getdata() override {
-        cin >> name >> age;
+        cin >> name >> age >> marks[0] >> marks[1] >> marks[2] >> marks[3] >> marks[4] >> marks[5];
     }
 
     void putdata() override {
-
+        cout << name << " " << age << " " << accumulate(begin(marks), end(marks), 0, plus<int>{}) << " " << cur_id << endl;
     }
 
     ~Student() {}
 };
+int Student::id = 0;
 
 int main(){
 
