@@ -25,3 +25,6 @@ add_executable(hr_exceptional_server-exe ${HR_EXCEPTIONALSERVER_SRC}/hr_exceptio
 
 set(HR_VIRTUALFUNCTIONS_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_VirtualFunctions)
 add_executable(hr_virtual_functions-exe ${HR_VIRTUALFUNCTIONS_SRC}/hr_virtual_functions.cpp)
+
+set(HR_ABSTRACTCLASSESPOLYMORPHISM_SRC ${CMAKE_CURRENT_SOURCE_DIR}/HR_AbstractClassesPolymorphism)
+add_executable(hr_abstract_classes_polymorphism-exe ${HR_ABSTRACTCLASSESPOLYMORPHISM_SRC}/hr_abstract_classes_polymorphism.cpp)
