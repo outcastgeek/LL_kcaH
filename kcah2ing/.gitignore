@@ -191,3 +191,5 @@ CTestTestfile.cmake
 
 # Project
 .idea
+zig-cache
+bin
