@@ -3,6 +3,8 @@ project(LL_kcaH)
 
 cmake_minimum_required(VERSION 3.3)
 
+include(cmake/utilities.cmake)
+
 add_subdirectory(kcah2ing)
 
 add_subdirectory(LearnC)
