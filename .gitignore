@@ -151,3 +151,6 @@ fabric.properties
 
 # Project
 .idea
+.vscode
+build
+zig-cache
